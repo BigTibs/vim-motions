@@ -1,0 +1,6 @@
+Go into visual mode => v
+
+Into visual mode hjkl to select
+All number and combos are still available
+
+Go into visual line mode => V

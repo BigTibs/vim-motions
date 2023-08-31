@@ -1,0 +1,13 @@
+Enter window mode:
+<C-w>
+
+
+In window mode =>
+
+s : Split horizontally
+v : Split vertically
+h : Go to left window
+l : Go to right window
+j : Go to window below
+k : Go to window above
+o : Close all window except current

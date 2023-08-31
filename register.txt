@@ -1,0 +1,9 @@
+See the register => :reg
+
+Change a specific register =>
+Highlight what you want, then "<key of register (ex: b)>y
+
+Edit what's in a register =>
+"<key of register>p
+
+

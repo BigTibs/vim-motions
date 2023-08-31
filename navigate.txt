@@ -1,0 +1,86 @@
+Normal mode:
+
+ 0 : Start of line
+ _ : First character of line
+ $ : End of line
+  : 
+ h : Go left
+ l : Go right
+ j : Go down
+ k : Go up
+
+ w : First character of next word
+ b : w but backward
+ e : Last character of word
+ ge: e but backward
+ f<any character> : Go to next occurence of the character
+ t<any character> : Go right before next occurence of the character
+ F<any character> : Go to precedent occurence of the character
+ T<any character> : Go right after precedent occurence of the character
+ ; : Goes to next occurence of the character
+ , : Goes to precedent occurence of the character
+
+ Deleting
+
+ d : Delete
+ c : Delete but go into insert mode after
+ D : To delete rest of line from your cursor
+ C : To delete rest of line from your cursor and go into insert mode
+ S : Delete whole line, respect indenting and go into insert mode
+ x : Delete character
+ s : Delete character and go into insert mode
+ dip : Delete paragraph
+ dap : Delete paragraph + white spaces
+
+
+ Yanking
+ yyp: Copy line after current line
+ yyP: Copy line befor current line
+
+ 
+ <C-6> : Go to previous file
+
+ % : Go to end of pair (), [], {}
+ { : Go to top of precedent paragraph
+ } : Go to bottom of next paragrap:w
+  
+ <C-d> : Jump half page down
+ <C-u> : Jump halp page up
+ G : Go all the way down
+ gg : Go all the way up
+ :<number> : Go to that line number
+ /<character or word>: Go to the next character or word
+ n : Go to the next while searching
+ N : Go to previous while searching
+ ?<character or word> : Go to previous character or word
+ * : Search the current word in file
+ # : Search the current word  in file, but backwards
+
+vF{%d : Delete whole if statement or function
+
+diw : Delete within word
+daw : Delete word    
+ciw : Delete within word and go insert mode
+caw : Delete word and go insert mode
+diW : Delete everything till white spaces to both sides
+daW : Delete everything and white spaces to both sides
+di{ : Delete what's inside { and }
+vi{ : Select what's inside { and }
+da{ : Delete what's inside { and } and { } too
+va{ : Select what's inside { and } and { } too
+vip : Select paragraph
+vap : Select paragraph + white spaces
+
+if you V after va{ or da{, you go into visual line mode and select first line of function or if statement
+
+
+In visual mode, if you press o you go to start and end of selection
+
+
+asdfasdf{
+    sdf
+    sdf
+    sdf
+    sdf
+    sdf
+}

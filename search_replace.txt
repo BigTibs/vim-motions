@@ -1,0 +1,18 @@
+To search within a line =>
+:s/<some text to search in line>/<what to replace with>
+
+To search within all the file =>
+:%s/.../...
+
+To replace every occurence =>
+:s/.../.../g
+
+To replace every occurence but confirm everytime =>
+:s/.../.../gc
+
+
+Search within a range selected with visual mode =>
+First select what you want in visual mode
+Then :s/.../...
+
+

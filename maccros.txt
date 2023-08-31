@@ -1,0 +1,9 @@
+Enter maccro mode => q
+Start recording => <key of the register> ex: a
+En maccro => q again
+Execute maccro => @<key of register> ex @a
+Execute maccro many times =>54@<key of register> ex: 54@a
+
+Increment a number => <C-a>
+
+11
