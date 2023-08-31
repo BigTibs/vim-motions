@@ -6,4 +6,3 @@ Execute maccro many times =>54@<key of register> ex: 54@a
 
 Increment a number => <C-a>
 
-11
