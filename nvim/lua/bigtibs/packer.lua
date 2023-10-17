@@ -6,12 +6,19 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  use('mbbill/undotree')
+  use('nvim-treesitter/nvim-treesitter', {run = 'TsUpdate'})
+  use('theprimeagen/harpoon')
+  use('tpope/vim-fugitive')
+  use ('lukas-reineke/indent-blankline.nvim')
 
+  --Telescope
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+  --Ayu Theme
   use ({
 	  'Shatur/neovim-ayu',
 	  as = 'ayu',
@@ -19,10 +26,14 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme ayu')
 	  end
   })
-  use('nvim-treesitter/nvim-treesitter', {run = 'TsUpdate'})
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+  --Comment
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
+  --LSP
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',

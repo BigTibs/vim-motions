@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'angular-language-server', 'rust_analyzer'},
+  ensure_installed = {'angular-language-server', 'rust_analyzer', 'dockerfile-language-server', 'html-lsp', 'typescript-language-server' },
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
